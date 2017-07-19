@@ -15,7 +15,7 @@ class RabbitMQApi(object):
     """
     class for rabbitmq management api
     """
-    def __init__(self,username='guest', password='768768cyTX', protocol='http', port=15672, host_name='10.215.33.21'):
+    def __init__(self,username='guest', password='7', protocol='http', port=1, host_name='1'):
         self.username = username
         self.password = password
         self.protocol = protocol
@@ -28,11 +28,11 @@ class RabbitMQApi(object):
         return response_list
 
 if __name__ == '__main__':
-    api = RabbitMQApi(username='guest', password='768768cyTX',protocol='http',
-                      port=15672, host_name='10.215.33.21')
+    api = RabbitMQApi(username='guest', password='7',protocol='http',
+                      port=1, host_name='10')
     item_list = ['messages_ready','messages_unacknowledged','memory']
     vhost_list = ['medweb','pedometer','robot','file_upload']
-    node_list = ['rabbit@rd1','rabbit@rd2']
+    node_list = ['rabbit@host1','rabbit@host2']
     queue_select_list = []
     collect_step = 60
     counter_type = falcon.CounterType.GAUGE
