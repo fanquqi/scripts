@@ -3,7 +3,6 @@
 
 """ Check Zookeeper Cluster
 ZooKeeperServer Download from http://john88wang.blog.51cto.com/2165294/1745339
-Modified by xiaxianzhi
 zookeeper version should be newer than 3.4.x
 
 # echo mntr|nc 127.0.0.1 2181
